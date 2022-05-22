@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
 const FileUpload = () => {
   const [file, setFile] = useState('');
-  const [filename, setFilename] = useState('Choose File');
+  const [filename, setFilename] = useState('');
 
   const handleChange = event => {
     setFile(event.target.files[0]);
@@ -32,18 +33,18 @@ const FileUpload = () => {
   };
 
   return (
-    <div>
+    <section id="formUpload">
       <form onSubmit={handleSubmit}>
-        <div className='file'>
+        <div className='file-div'>
+          <label className='file-label' htmlFor='file'>
+            {filename}
+          </label>
           <input
             type='file'
             className='file-input'
             id='file'
             onChange={handleChange}
           />
-          <label className='file-label' htmlFor='file'>
-            {filename}
-          </label>
         </div>
 
         <input
@@ -52,7 +53,7 @@ const FileUpload = () => {
           className='btnSubmit'
         />
       </form>
-    </div>
+    </section>
   );
 };
 

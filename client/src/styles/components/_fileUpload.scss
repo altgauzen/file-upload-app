@@ -1,0 +1,38 @@
+@import '../abstract/vars';
+
+
+#formUpload {
+  background-color: $color-ter;
+  padding: 4rem;
+  text-align: center;
+  border-radius: 14px;
+  .file-label {
+    margin: 10 px 0;
+    width: 575px;
+    padding: 20px;
+    border: 4px white;
+  }
+  .file-input {
+    text-transform: uppercase;
+    width:95%;
+    padding:12px;
+    border: 1px solid whitesmoke;
+    border-radius: 14px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+  }
+  .btnSubmit {
+    background-color: $color-qua;
+    color: $color-pri;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    &:hover {
+      color: $color-qua;
+      background-color: $color-pri;
+    }
+  }

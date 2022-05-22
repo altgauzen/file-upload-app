@@ -1,0 +1,10 @@
+@import '../abstract/vars';
+
+.container {
+  border-radius: 14px;
+  background-color: $color-pri;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  color: $color-qua;
+}
