@@ -3,6 +3,12 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const {uploadMulter} = require('./utils/uploadMulter');
+const {db} = require('./config/dbConnect');
+
+db.on("error", console.log.bind(console, 'Conection db error'));
+db.once("open", () => {
+  console.log('mongodb connection successfuly');
+});
 
 const PORT = 3001;
 const app = express();
