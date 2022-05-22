@@ -30,6 +30,7 @@ npm i -D nodemon concurrently
 npm i multer
 npm i cors mongoose body-parser
 npx create-react-app client
+npm i ejs
 
 cd client:
 npm i axios

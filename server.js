@@ -16,7 +16,12 @@ db.once("open", () => {
 const app = express();
 
 app.use(cors());
-app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
 app.use(express.static(path.resolve(__dirname, 'client/public/uploads')));
 
 app.use(routes);
