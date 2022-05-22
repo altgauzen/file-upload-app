@@ -23,7 +23,13 @@ Permanecemos no aguardo e qualquer dúvida, estamos à disposição.
 
 Boa sorte!
 
+on root:
 npm init -y
 npm i express
 npm i -D nodemon concurrently
 npm i multer
+npm i cors mongoose body-parser
+npx create-react-app client
+
+cd client:
+npm i axios

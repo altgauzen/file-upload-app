@@ -2,13 +2,13 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
-        callback(null, 'uploads');
+        callback(null, '__dirname/../client/public/uploads/');
     },
-    filename: (req, file, cb) => {
+    filename: (req, file, callback) => {
         callback(null, `${Date.now()}_${file.originalname}`);
     }
 });
 
-const upload = multer({ storage });
+const uploadMulter = multer({ storage });
 
 module.exports = {uploadMulter}
