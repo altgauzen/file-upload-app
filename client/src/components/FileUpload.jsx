@@ -34,7 +34,7 @@ const FileUpload = () => {
 
   return (
     <section id="formUpload">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} method="post" enctype="multipart/form-data">
         <div className='file-div'>
           <label className='file-label' htmlFor='file'>
             {filename}
