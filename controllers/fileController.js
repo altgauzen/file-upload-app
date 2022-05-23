@@ -17,7 +17,6 @@ const fileUploadController = async (req, res, next) => {
 const getAllFilesController = async (req, res, next) => {
     try{
         const allFiles = await Files.find();
-        console.log("NO CONTROLLER VEM ALL FILES?", allFiles);
         if(allFiles.length === 0) {
             return res
                 .render('fileList', {
