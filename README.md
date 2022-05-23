@@ -1,4 +1,4 @@
-# 
+#
 
 <p align="center">
   <img src="client/src/img/cloud-upload-img.png">
@@ -35,7 +35,7 @@ Montar o CI/CD utilizando o gitlab-ci.yml.
 
 1. Instale as dependências
 
-- Instale as dependências nas 3 pastas (raiz, front-end e back-end):
+- Instale as dependências nas 2 pastas (raiz e client):
   - `npm install`
 
 2. Rode os scripts
